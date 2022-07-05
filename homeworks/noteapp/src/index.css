@@ -1,0 +1,91 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #80808042 !important;
+}
+
+.custom-form-div>h1 {
+  color: gray;
+}
+
+.custom-form-div input {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.493);
+  padding: 6px 15px;
+  outline: none;
+}
+
+.mw-600 {
+  max-width: 750px;
+}
+
+textarea {
+  width: 650px;
+  height: 100px;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+
+.color-list {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input[type=radio],
+input[type=radio]:checked {
+  -webkit-appearance: none;
+  appearance: none;
+  content: none;
+  outline: none;
+}
+
+input[type=radio] {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 24%);
+}
+
+input[type=radio]:checked:before {
+  position: absolute;
+  color: rgb(0, 0, 0) !important;
+  content: "\00A0\2713\00A0" !important;
+  font-weight: bolder;
+  font-size: 21px;
+  outline: none;
+}
+
+
+.b-pink {
+  background-color: #ff008c;
+}
+
+.b-purple {
+  background-color: purple;
+}
+
+.b-yellow {
+  background-color: yellow;
+}
+
+.b-blue {
+  background-color: blue;
+}
+
+.b-green {
+  background-color: green;
+}
