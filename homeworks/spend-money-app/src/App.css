@@ -1,0 +1,28 @@
+.custom-background {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.navbar-height {
+    height: 80px;
+}
+
+.linear-yellow-background {
+    background: linear-gradient(180deg, #2ecc71, #1abc9c);
+}
+
+.product-card-img {
+    text-align: center;
+}
+
+.product-card-img img {
+    margin: 15px auto;
+    height: 125px;
+}
+
+.bottom-inputs {
+    text-align: center;
+}
+
+#horizontal {
+    width: 100px;
+}
