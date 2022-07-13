@@ -26,3 +26,7 @@
 #horizontal {
     width: 100px;
 }
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0 !important;
+}
