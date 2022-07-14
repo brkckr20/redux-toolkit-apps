@@ -9,13 +9,14 @@ export const spendMoneySlice = createSlice({
     },
     reducers: {
         addItems: (state, action) => {
-            let addedItems = current(state.items).find((item) => item.id === action.payload.id);
-            let isInBasket = current(state.basket).find((item) => item.id !== addItems.id);
+            let item = current(state.items).find(item => item.id === action.payload.id);
+            let isInBasket = current(state.basket).find(bsk => bsk.id === item.id);
             if (!isInBasket) {
-                state.basket = [...state.basket, addedItems];
-            } else {
-                // state.basket.amount += 1
+                state.basket.push(item);
+            } else if (isInBasket) {
+                state.basket.map(item => item.amount += 1);
             }
+
 
         }
     },
