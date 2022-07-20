@@ -16,13 +16,19 @@ export const spendMoneySlice = createSlice({
             } else if (isInBasket) {
                 state.basket.map(item => item.amount += 1);
             }
-
-
+        },
+        sellItems: (state, action) => {
+            let isInBasket = current(state.basket).find(item => item.id === action.payload.id);
+            if (isInBasket) {
+                state.basket.map(item => item.amount -= 1);
+            } else if (!isInBasket) {
+                state.basket.map(item => item.amount = 1);
+            }
         }
     },
     extraReducers: {}
 })
 
-export const { addItems } = spendMoneySlice.actions
+export const { addItems, sellItems } = spendMoneySlice.actions
 
 export default spendMoneySlice.reducer;
