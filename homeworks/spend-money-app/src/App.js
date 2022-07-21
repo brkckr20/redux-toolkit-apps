@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='container mt-2'>
+      <div className='container mt-3'>
         <Profile />
         <TotalPrice />
         <Products />
@@ -20,3 +20,10 @@ function App() {
 }
 
 export default App;
+
+
+/*
+
+  completed date 21.07.2022
+
+*/
